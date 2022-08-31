@@ -1,0 +1,10 @@
+@charset "UTF-8";
+/* CSS Document */
+body{
+	background-image:url("../images/fondo1.jpeg");
+	background-position: top;
+	background-repeat: no-repeat;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	
+}
+
