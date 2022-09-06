@@ -66,8 +66,8 @@ document.getElementById("ad3").innerHTML = Object.values(veinte);
 //retraso el script para que cargue la pagina con la info primero
 setTimeout(function () {
 
-			let sesion=prompt("Ingrese el tipo de sesion (OUTDOORS, ESTUDIO, NEWBORN): ");
-			let adicional=prompt("Ingrese pack de fotos adicional (SMALL, MEDIUM, LARGE): ");
+			let sesion=prompt("Ingrese el tipo de sesion (OUTDOORS, ESTUDIO, NEWBORN, en mayúscula): ");
+			let adicional=prompt("Ingrese pack de fotos adicional (SMALL, MEDIUM, LARGE, en mayúscula): ");
 			let valorUno;
 			let valorDos;
 
@@ -99,7 +99,7 @@ setTimeout(function () {
 			
 			}
 
-	if(((sesion=="OUTDOORS")||(sesion=="STUDIO")||(sesion=="NEWBORN"))&((adicional=="SMALL")||(adicional=="MEDIUM")||(adicional=="LARGE"))){
+	if(((sesion=="OUTDOORS")||(sesion=="ESTUDIO")||(sesion=="NEWBORN"))&((adicional=="SMALL")||(adicional=="MEDIUM")||(adicional=="LARGE"))){
 	let total= valorUno+valorDos;
 			alert("El valor total del servicio más adicionales es: "+total);
 	}else{
