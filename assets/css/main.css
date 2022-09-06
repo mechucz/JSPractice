@@ -1,10 +1,30 @@
 @charset "UTF-8";
 /* CSS Document */
 body{
-	background-image:url("../images/fondo1.jpeg");
+	background-image:url("../images/fondo2.jpg");
 	background-position: top;
 	background-repeat: no-repeat;
-	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	background-size: cover;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 	
 }
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
 
+.flex-container > div.left {
+  width: 10%;
+
+
+}
+.flex-container > div.middle {
+  width: 40%;
+
+
+}
+.flex-container > div.right {
+  width: 50%;
+
+
+}
