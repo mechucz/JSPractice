@@ -62,51 +62,62 @@ document.getElementById("ad1").innerHTML = Object.values(cinco);
 document.getElementById("ad2").innerHTML = Object.values(diez);
 document.getElementById("ad3").innerHTML = Object.values(veinte);
 
-//Cotizador de servicios
 //retraso el script para que cargue la pagina con la info primero
 setTimeout(function () {
 
-			let sesion=prompt("Ingrese el tipo de sesion (OUTDOORS, ESTUDIO, NEWBORN, en mayúscula): ");
-			let adicional=prompt("Ingrese pack de fotos adicional (SMALL, MEDIUM, LARGE, en mayúscula): ");
-			let valorUno;
-			let valorDos;
+		//Botón opción abrir cotizador
+		if (confirm('Quieres abrir el cotizador')) {
 
 
-			switch (sesion){
-				case "OUTDOORS":
-					valorUno= outdoors.price;
-					break;
-				case "ESTUDIO":
-					valorUno= studio.price;
-					break;
-				case "NEWBORN":
-					valorUno= newBorn.price;
-					break;
-			
-			}
 
 
-			switch (adicional){
-				case "SMALL":
-					valorDos= cinco.price;
-					break;
-				case "MEDIUM":
-					valorDos= diez.price;
-					break;
-				case "LARGE":
-					valorDos= veinte.price;
-					break;
-			
-			}
+		//Cotizador de servicios
 
-	if(((sesion=="OUTDOORS")||(sesion=="ESTUDIO")||(sesion=="NEWBORN"))&((adicional=="SMALL")||(adicional=="MEDIUM")||(adicional=="LARGE"))){
-	let total= valorUno+valorDos;
-			alert("El valor total del servicio más adicionales es: "+total);
-	}else{
-			
-			alert("Algo salió mal");
-				
-	};
 
+					let sesion=prompt("Ingrese el tipo de sesion (OUTDOORS, ESTUDIO, NEWBORN, en mayúscula): ");
+					let adicional=prompt("Ingrese pack de fotos adicional (SMALL, MEDIUM, LARGE, en mayúscula): ");
+					let valorUno;
+					let valorDos;
+
+
+					switch (sesion){
+						case "OUTDOORS":
+							valorUno= outdoors.price;
+							break;
+						case "ESTUDIO":
+							valorUno= studio.price;
+							break;
+						case "NEWBORN":
+							valorUno= newBorn.price;
+							break;
+
+					}
+
+
+					switch (adicional){
+						case "SMALL":
+							valorDos= cinco.price;
+							break;
+						case "MEDIUM":
+							valorDos= diez.price;
+							break;
+						case "LARGE":
+							valorDos= veinte.price;
+							break;
+
+					}
+
+			if(((sesion=="OUTDOORS")||(sesion=="ESTUDIO")||(sesion=="NEWBORN"))&((adicional=="SMALL")||(adicional=="MEDIUM")||(adicional=="LARGE"))){
+			let total= valorUno+valorDos;
+					alert("El valor total del servicio más adicionales es: "+total);
+			}else{
+
+					alert("Algo salió mal");
+
+			};
+	} else {
+	 
+	  alert('De acuerdo');
+	}
 	  
 }, 200)
