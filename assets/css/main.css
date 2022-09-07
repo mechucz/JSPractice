@@ -9,6 +9,11 @@ body{
 	padding-top:80px;
 	
 }
+
+.pf1{
+	background-image:url("../images/fondo3.jpg");
+	
+}
 .flex-container {
   display: flex;
   flex-wrap: nowrap;

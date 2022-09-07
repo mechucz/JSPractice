@@ -53,6 +53,12 @@ let large={
 	description:" 20 imágenes digitales adicionales"
 };
 
+let zero={
+	title: "NULO",
+	titPrice:" Precio: $",
+	price:0,
+	description:" Servicio inexistente"
+};
 
 
 document.getElementById("produ1").innerHTML = Object.values(outdoors);
@@ -90,6 +96,9 @@ setTimeout(function () {
 						case "newborn":
 							valorUno= newborn.price;
 							break;
+						default:
+						valorUno= 0;
+						break;
 
 					}
 
@@ -104,6 +113,9 @@ setTimeout(function () {
 						case "large":
 							valorDos= large.price;
 							break;
+						default:
+						valorDos= 0;
+						break;
 
 					}
 
@@ -122,12 +134,55 @@ setTimeout(function () {
 	
 //Guardamos los ervicios que el ususario quiere contratar en un array
 	
-	let serviciosUsuario = [];
-	
-	while (confirm('Quieres guardar tu seleccion de servicios?')) {
-		let item=prompt('Ingrese el servicio:');
-		serviciosUsuario.push(item);
-		console.log(serviciosUsuario);
+	let carrito = [];
+	let item;
 
+	while (confirm('Quieres guardar tu seleccion de servicios?')) {
+		 item=prompt('Ingrese el servicio:').toLowerCase()
+		
+					switch (item){
+						case "outdoors":
+							item= outdoors;
+							break;
+						case "estudio":
+							item= studio;
+							break;
+						case "newborn":
+							item= newborn;
+							break;
+							case "small":
+							item= small;
+							break;
+						case "medium":
+							item= medium;
+							break;
+						case "large":
+							item= large;
+							break;
+						default:
+						item=zero;
+						break;
+
+					}
+		
+		carrito.push(item);
+	};
+
+//Vemos por consola el carrito del cliente
+		console.log(carrito);
+	
+/*Ahora calcularemos el total de los servicios que le interesan al cliente, pare ello hacemos un array de precios 
+(de los servicios indicados por el usuario) y usamos el metodo reduce para obtener el total*/
+	
+	let precios=[];
+	for (let i=0; i < carrito.length; i++){
+			precios.push(carrito[i].price);
 		};
+		
+	let sum = precios.reduce(function (previousValue, currentValue) {
+    return previousValue + currentValue;
+});
+//Mostramos por alert el total de los servicios del carrito
+	
+alert("El total de tus servicios será de :" +sum);
 }, 200)
