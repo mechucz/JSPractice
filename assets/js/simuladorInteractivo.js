@@ -117,7 +117,7 @@ setTimeout(function () {
 			};
 	} else {
 	 
-	  alert('De acuerdo');
+	  console.log('OK listo');
 	}
 	  
 }, 200)
