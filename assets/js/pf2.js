@@ -91,10 +91,6 @@ if(localStorage.getItem("quotes")){
    
    let quote = JSON.parse(localStorage.getItem("quotes"));
 	quotes.push(...quote);
-	/*for(let i=0; i<quote.length; i++){
-		quotes.push(quote[i]);
-	} */ 
- 
  }
 
 const cotizador= document.getElementById("cotizador");
@@ -170,7 +166,7 @@ function cotizar(){
 const quoteContainer= document.getElementById("quoteContainer");
 
 
-//FUNCION PARA VER RESERVAS
+//FUNCION PARA VER LAS COTIZACIONES
 function showQuote(){
 	
 	quoteContainer.innerHTML="";
