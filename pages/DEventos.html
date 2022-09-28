@@ -26,13 +26,13 @@
           <a class="nav-link" href="./arrays.html">D Arrays</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link  active" href="./pf1.html">PF 1era entrega</a>
+          <a class="nav-link" href="./pf1.html">PF 1era entrega</a>
         </li>
 		 <li class="nav-item">
           <a class="nav-link" href="./soon.html">D HTML</a>
         </li>
 		 <li class="nav-item">
-          <a class="nav-link" href="./DEventos.html">D Eventos</a>
+          <a class="nav-link active" href="./DEventos.html">D Eventos</a>
         </li>
 		   <li class="nav-item">
           <a class="nav-link" href="./pf2.html">PF Segunda Entrega</a>
@@ -44,9 +44,33 @@
 	<div class="container-fluid">
 		
 		  <div class="row">
-    	
+    	<div class="col-sm-12 col-md-4">
+			  <h1 align="center">Cotiza tu servicio !</h1>
+			
+				  <form id="cotizador">
+					 <div><label for ="sesion">Tipo de sesión: </label>
+						<select name= "Tipo de sesión" id ="sesion">
+							<option id="outdoor" value="outdoor"></option>
+							<option id="studio" value="studio"></option>
+							<option id="newborn" value="newborn"></option>
+						</select>
+						 </div>
+					  <div>
+					   <label for ="adicional">Paquetes: </label>
+						<select name= "Tipo de sesión" id ="adicional">
+							<option id="small" value="small"></option>
+							<option id="medium" value="medium"></option>
+							<option id="large" value="large"></option>
+						</select>
+						  </div>
+					  <button id="quote">Cotizar</button>
+					 
+				  </form>
+			
+			  
+			  </div>
 			  <div class="col-sm-12 col-md-4 ms-4 me-4 pb-4">
-			<h1 align="center">Cotiza tu servicio !</h1>
+			
 				<h3 >Sesiones</h3>
 				  <div id ="produ1"></div>
 				 <div id ="produ2"></div>
@@ -57,10 +81,10 @@
 				 <div id ="adi3"></div>
 			</div>
 		
-  			<div class="col-sm-12 col-md-8"></div>
+  			<div class="col-sm-12 col-md-4"></div>
 		</div>
 </div>	
-<script src="../assets/js/pf1.js"></script>	
+<script src="../assets/js/dEventos.js"></script>	
 </body>
 
 </html>

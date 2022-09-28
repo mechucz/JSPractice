@@ -34,3 +34,21 @@ body{
 
 
 }
+
+#cotizador{
+	min-height: 300px;
+	border: 2px dotted firebrick;
+	border-radius: 6px;
+	padding: 10px;
+}
+
+#cotizador div{
+	padding: 10px;
+}
+
+#cotizador button{
+	color:white;
+	background-color: firebrick;
+	border-radius: 4px;
+	border-color:white;
+}
