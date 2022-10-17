@@ -18,16 +18,4 @@
  "duration": "90 minutos", 
  "digitals": "10 imágenes digitales", 
  "maxPeople": "3 personas(max)",
- "price":"100000"},
-
-{"nombre": "Small",  
- "description": "5 imágenes digitales adicionales",
- "price": "35000"},
-
-{"nombre": "Medium", 
- "description": "10 imágenes digitales adicionales",
- "price": "50000"},
-
-{"nombre": "Large", 
- "description": "20 imágenes digitales adicionales",
- "price": "80000"}]
+ "price":"100000"}]

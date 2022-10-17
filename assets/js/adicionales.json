@@ -1,0 +1,12 @@
+
+[{"nombre": "Small",  
+ "description": "5 imágenes digitales adicionales",
+ "price": "35000"},
+
+{"nombre": "Medium", 
+ "description": "10 imágenes digitales adicionales",
+ "price": "50000"},
+
+{"nombre": "Large", 
+ "description": "20 imágenes digitales adicionales",
+ "price": "80000"}]
