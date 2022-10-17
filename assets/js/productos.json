@@ -4,18 +4,18 @@
   "duration": " 60 minutos", 
   "digitals": " 10 imágenes digitales", 
   "maxPeople": "12 personas(max)",
-  "price": "80000"},
+  "price": 80000},
 
 {"nombre": "Estudio",  
  "description": "** Sesión Estudio: sesión de fotos en estudio, con fondo blanco, negro o de colores, flashes y luces artificiales", 
  "duration": "45 minutos", 
  "digitals": "10 imágenes digitales",
  "maxPeople": "6 personas(max)",
- "price": "60000"},
+ "price": 60000},
 
 {"nombre": "Newborn", 
  "description": "*** Sesión de recién nacidos en estudio, con temperatura controlada y luz rebotada. Incluye wraps, props y accesorios", 
  "duration": "90 minutos", 
  "digitals": "10 imágenes digitales", 
  "maxPeople": "3 personas(max)",
- "price":"100000"}]
+ "price":100000}]
