@@ -1,6 +1,5 @@
 // JavaScript Document
 
-localStorage.clear();
 /************Presentamos los productos en el HTML****************/
 
 //INFO PARA EL USUARIO
